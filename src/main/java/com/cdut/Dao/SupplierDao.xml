@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cdut.Dao.SupplierDao">
+    <resultMap id="SupplierMap" type="com.cdut.Pojo.Supplier">
+        <id property="supplierId" column="supplier_id"/>
+        <id property="userId" column="user_id"/>
+        <result property="supplierName" column="supplier_name"/>
+        <result property="address" column="address"/>
+        <result property="category" column="category"/>
+    </resultMap>
+    <select id="getCountSupplier" resultType="Integer">
+        select count(*) from shop;
+    </select>
+    <select id="listAllSupplier" resultType="com.cdut.Pojo.Supplier" resultMap="SupplierMap">
+        select * from shop;
+    </select>
+    <select id="getSupplierBysupplierId" resultType="com.cdut.Pojo.Supplier">
+        select *from shop where supplier_id=#{supplierId};
+    </select>
+    <select id="getSupplierByuserId" resultType="com.cdut.Pojo.Supplier">
+        select *from shop where user_id=#{userId};
+    </select>
+    <insert id="insertSupplier">
+        insert into shop values (#{userId},#{supplierId},#{supplierName},#{Address},#{category});
+    </insert>
+    <update id="updateSupplier">
+        update shop set supplier_name=#{supplierName}, address=#{Address},category=#{category}
+        where user_id=#{userId} and supplier_id=#{supplierId};
+    </update>
+    <delete id="deleteSupplierBysupplierId">
+        delete from shop where supplier_id=#{supplierId};
+    </delete>
+</mapper>

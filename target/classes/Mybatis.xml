@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--控制mybatis全局行为的-->
+    <settings>
+        <!--日志输出到控制台-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!-- 打开延迟加载的开关 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 将积极加载改为消极加载(及按需加载) -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!-- 打开全局缓存开关(二级缓存)默认值就是true -->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <!--mapper.xml的位置-->
+    <mappers>
+        <package name="com.cdut.Dao"/>
+    </mappers>
+</configuration>
+    
