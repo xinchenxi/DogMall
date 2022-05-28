@@ -1,6 +1,7 @@
 package com.cdut.Controller;
 
 import com.cdut.Pojo.User;
+import com.cdut.Pojo.UserInfo;
 import com.cdut.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -58,10 +59,9 @@ public class TestController {
 
         userService.addUser(user);
 
-        User users =userService.getUserByAccount("z992448694");
+        User users =userService.getUserByAccount(account);
         mv.addObject("users",users);
         mv.setViewName("result.jsp");
-        System.out.println(users);
         return mv;
     }
     @RequestMapping("/updateUserPassword.do")
@@ -75,5 +75,19 @@ public class TestController {
         mv.addObject("user1",user1);
         mv.setViewName("result.jsp");
         return mv;
+    }
+
+    @RequestMapping("updateUser.do")
+    public void user5(){
+        userService.updateUser(new UserInfo("3","花花","女","99@qq","山西","193" ,1));
+        //userService.deteleUserById("978697264128065536");
+    }
+    @RequestMapping("deteleUserById.do")
+    public void user6(){
+        userService.deteleUserById("978697264128065536");
+    }
+    @RequestMapping("updateUserGrade.do")
+    public void user7(){
+        userService.updateUserGrade("3",2);
     }
 }

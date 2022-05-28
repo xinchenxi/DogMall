@@ -38,12 +38,5 @@ public interface UserDao {
      * 根据id删除用户
      */
     public void deleteUserById(String userId);
-    /**
-     *   修改用户等级
-     */
-    public void updateUserGrade(String userId,Integer Grade);
-    /**
-     * 修改用户信息
-     */
-    public void updateUser(UserInfo userInfo);
+
 }

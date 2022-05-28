@@ -1,6 +1,7 @@
 package com.cdut.Pojo;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * 用户收藏
@@ -14,7 +15,10 @@ public class UserFavorite {
     /**
      * 收藏的商品id
      */
-    private String[] goodId;
+    private List<Goods> good;
+
+    public UserFavorite() {
+    }
 
     public String getUserId() {
         return userId;
@@ -24,19 +28,19 @@ public class UserFavorite {
         this.userId = userId;
     }
 
-    public String[] getGoodId() {
-        return goodId;
+    public List<Goods> getGood() {
+        return good;
     }
 
-    public void setGoodId(String[] goodId) {
-        this.goodId = goodId;
+    public void setGood(List<Goods> good) {
+        this.good = good;
     }
 
     @Override
     public String toString() {
         return "UserFavorite{" +
-                "userId=" + userId +
-                ", goodId=" + Arrays.toString(goodId) +
+                "userId='" + userId + '\'' +
+                ", good=" + good +
                 '}';
     }
 }

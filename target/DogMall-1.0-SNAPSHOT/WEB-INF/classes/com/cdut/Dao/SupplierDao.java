@@ -19,11 +19,11 @@ public interface SupplierDao {
     /**
      *  根据商家id获得商家的信息
      */
-    public Supplier getSupplierBysupplierId(Integer supplierId);
+    public Supplier getSupplierBysupplierId(String supplierId);
     /**
      *  根据用户id获得商家的信息
      */
-    public Supplier getSupplierByuserId(Integer userId);
+    public Supplier getSupplierByuserId(String userId);
     /**
      *  新增一个商家
      */
@@ -35,6 +35,6 @@ public interface SupplierDao {
     /**
      *  根据商家id删除商家
      */
-    public void deleteSupplierBysupplierId(Integer supplierId);
+    public void deleteSupplierBysupplierId(String supplierId);
 
 }

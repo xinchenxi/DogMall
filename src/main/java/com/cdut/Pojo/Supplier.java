@@ -25,6 +25,14 @@ public class Supplier {
      */
     private String category;
 
+    public Supplier(String userId, String supplierId, String supplierName, String address, String category) {
+        this.userId = userId;
+        this.supplierId = supplierId;
+        this.supplierName = supplierName;
+        this.address = address;
+        this.category = category;
+    }
+
     public String getUserId() {
         return userId;
     }

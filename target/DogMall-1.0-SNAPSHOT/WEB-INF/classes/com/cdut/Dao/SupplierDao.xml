@@ -23,13 +23,14 @@
         select *from shop where user_id=#{userId};
     </select>
     <insert id="insertSupplier">
-        insert into shop values (#{userId},#{supplierId},#{supplierName},#{Address},#{category});
+        insert into shop values (#{userId},#{supplierId},#{supplierName},#{address},#{category});
     </insert>
     <update id="updateSupplier">
-        update shop set supplier_name=#{supplierName}, address=#{Address},category=#{category}
+        update shop set supplier_name=#{supplierName}, address=#{address},category=#{category}
         where user_id=#{userId} and supplier_id=#{supplierId};
     </update>
     <delete id="deleteSupplierBysupplierId">
         delete from shop where supplier_id=#{supplierId};
     </delete>
+
 </mapper>

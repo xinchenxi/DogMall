@@ -4,12 +4,31 @@ package com.cdut.Pojo;
  * 用户详细信息
  */
 public class UserInfo {
+    private String userId;
     private String username;
     private String sex;
     private String email;
     private String address;
     private String phone;
     private Integer grade;
+
+    public UserInfo(String userId, String username, String sex, String email, String address, String phone, Integer grade) {
+        this.userId = userId;
+        this.username = username;
+        this.sex = sex;
+        this.email = email;
+        this.address = address;
+        this.phone = phone;
+        this.grade = grade;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public String getUsername() { return username; }
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cdut.Dao.UserFavoriteDao">
+
+    <!--<resultMap id="AllUserFaorite" type="com.cdut.Pojo.UserFavorite">
+        <result property="userId" column="user_id"/>
+        <collection property="good" ofType="com.cdut.Pojo.Goods">
+            <id property="goodId" column="good_id"/>
+            <result property="goodName" column="good_name"/>
+            <result property="nums" column="nums"/>
+            <result property="price" column="price"/>
+            <result property="supplierId" column="supplier_id"/>
+            <result property="describe" column="describes"/>
+            <result property="imgurl" column="imgurl"/>
+            <result property="status" column="status"/>
+        </collection>
+    </resultMap>-->
+    <resultMap id="AllUserFaorite" type="com.cdut.Vo.UserFavorite">
+        <result property="userId" column="user_id"/>
+        <collection property="good" select="com.cdut.Dao.GoodsDao.selectGoodsById" column="good_id" autoMapping="true"/>
+    </resultMap>
+    <select id="listAllFavoriteGoods" resultType="com.cdut.Pojo.Goods" resultMap="com.cdut.Dao.GoodsDao.GoodsMap">
+        select goods.* from userfavorite,goods where user_id=#{userId} and goods.good_id=userfavorite.good_id;
+    </select>
+    <insert id="insertUserFavoriteGoods">
+        insert into userfavorite values (user_id=#{userId},good_id=#{goodId});
+    </insert>
+    <delete id="deleteUserFavoriteGoods">
+        delete from userfavorite where user_id=#{userId};
+    </delete>
+</mapper>

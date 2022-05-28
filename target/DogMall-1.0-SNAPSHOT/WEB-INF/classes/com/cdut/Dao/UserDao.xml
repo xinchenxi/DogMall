@@ -25,17 +25,12 @@
     </insert>
     <delete id="deleteUserById">
         delete from user where user_id=#{userid};
+
     </delete>
+
     <!--修改用户密码-->
     <update id="updatePassword">
         update user set password=#{password} where user_id=#{userId};
     </update>
-    <!--修改用户信息-->
-    <update id="updateUserGrade">
-        update userinfo set grade=#{grade} where user_id=#{userid};
-    </update>
-    <update id="updateUser">
-        update userinfo set username=#{username},sex=#{sex},email=#{email},address=#{address},phone=#{phone}
-        where user_id=#{userid};
-    </update>
+
 </mapper>

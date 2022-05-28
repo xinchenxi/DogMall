@@ -14,6 +14,7 @@ public class SupplierController {
 
     @Autowired
     SupplierService supplierService;
+
     @RequestMapping("testSupplier.do")
     public ModelAndView supplier1(){
         ModelAndView mv=new ModelAndView();
@@ -23,5 +24,22 @@ public class SupplierController {
         mv.addObject("allSupplier",suppliers);
         mv.setViewName("result1.jsp");
         return mv;
+    }
+
+    @RequestMapping("/findSupplier.do")
+    public String supplier2(){
+        System.out.println(supplierService.findSuppliereBySupplierId("123"));
+        System.out.println(supplierService.finSupplierByUserId("1"));
+        supplierService.addSupplier(new Supplier("3","147","中国知网","北京","文化"));
+        return "result.jsp";
+    }
+
+    @RequestMapping("updateSupplier.do")
+    public void supplier3(){
+        supplierService.updateSupplier(new Supplier("3","147","中国知网","北京","抄袭"));
+    }
+    @RequestMapping("deleteSupplier.do")
+    public void supplier4(){
+        supplierService.deleteSupplierBysupplierId("147");
     }
 }

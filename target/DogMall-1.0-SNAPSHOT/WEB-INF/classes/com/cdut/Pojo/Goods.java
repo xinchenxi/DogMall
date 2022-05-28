@@ -19,11 +19,11 @@ public class Goods {
     /**
      *价格
      */
-    private double sales;
+    private double price;
     /**
      * 提供商家的id
      */
-    private Integer supplier_id;
+    private String supplierId;
     /**
      * 商品描述
      */
@@ -36,6 +36,20 @@ public class Goods {
      * 商品状态
      */
     private Integer status;
+
+    public Goods() {
+    }
+
+    public Goods(String goodId, String goodName, Integer nums, double price, String supplierId, String describe, String imgurl, Integer status) {
+        this.goodId = goodId;
+        this.goodName = goodName;
+        this.nums = nums;
+        this.price = price;
+        this.supplierId = supplierId;
+        this.describe = describe;
+        this.imgurl = imgurl;
+        this.status = status;
+    }
 
     public String getGoodId() {
         return goodId;
@@ -61,20 +75,20 @@ public class Goods {
         this.nums = nums;
     }
 
-    public double getSales() {
-        return sales;
+    public double getPrice() {
+        return price;
     }
 
-    public void setSales(Integer sales) {
-        this.sales = sales;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public Integer getSupplier_id() {
-        return supplier_id;
+    public String getSupplierId() {
+        return supplierId;
     }
 
-    public void setSupplier_id(Integer supplier_id) {
-        this.supplier_id = supplier_id;
+    public void setSupplierId(String supplierId) {
+        this.supplierId = supplierId;
     }
 
     public String getDescribe() {
@@ -107,8 +121,8 @@ public class Goods {
                 "goodId=" + goodId +
                 ", goodName='" + goodName + '\'' +
                 ", nums=" + nums +
-                ", sales=" + sales +
-                ", supplier_id=" + supplier_id +
+                ", price=" + price +
+                ", supplierId=" + supplierId +
                 ", describe='" + describe + '\'' +
                 ", imgurl='" + imgurl + '\'' +
                 ", status=" + status +

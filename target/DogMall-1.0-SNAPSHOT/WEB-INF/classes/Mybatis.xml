@@ -4,6 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+
+
+
     <!--控制mybatis全局行为的-->
     <settings>
         <!--日志输出到控制台-->

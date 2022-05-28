@@ -22,7 +22,19 @@ public interface UserService {
      */
     public void updateUser(UserInfo userInfo);
 
+    /**
+     * 修改用户密码
+     * @param userId 用户id
+     * @param oldpwd 旧密码
+     * @param newpwd 新密码
+     */
     public void updatePassword(String userId, String oldpwd,String newpwd);
 
+    /**
+     * 根据用户id删除用户
+     * @param userid 用户id
+     */
     public void deteleUserById(String userid);
+
+    public void updateUserGrade(String userid,Integer grade);
 }

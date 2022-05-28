@@ -22,8 +22,15 @@ life is a fucking movie.
     新密码:<input type="password" name="newpassword"><br>
     <input type="submit" value="提交">
 </form>
-<form action="/testSupplier.do" method="post">
-    <input type="submit" value="测试supplier">
+<form action="/updateUser.do" method="post">
+    <input type="submit" value="updateUser">
+</form>
+<form action="/listAllUserFavorite.do" method="post">
+    <input type="submit" value="测试UserFavorite">
+</form>
+
+<form action="/deteleUserById.do" method="post">
+    <input type="submit" value="deteleUserById">
 </form>
 </body>
 </html>

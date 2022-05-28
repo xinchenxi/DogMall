@@ -9,5 +9,13 @@ public interface SupplierService {
 
     public List<Supplier> ListAllSupplier();
 
+    public Supplier  findSuppliereBySupplierId(String supplierId);
 
+    public  Supplier finSupplierByUserId(String userId);
+
+    public void addSupplier(Supplier supplier);
+
+    public  void updateSupplier(Supplier supplier);
+
+    public void deleteSupplierBysupplierId(String supplierId);
 }
