@@ -1,7 +1,6 @@
 package com.cdut.Pojo;
 
-import java.util.Arrays;
-
+import java.util.List;
 /**
  * 购物车
  */
@@ -13,15 +12,11 @@ public class ShoppingCart {
     /**
      *  所有的商品id
      */
-    private String[] goodId;
+    private List<Goods> goods;
     /**
      * 商品的数量
      */
-    private Integer[] nums;
-    /**
-     * 所有商品的价格
-     */
-    private double[] price;
+    private List<Integer> nums;
 
     public String getUserId() {
         return userId;
@@ -31,37 +26,29 @@ public class ShoppingCart {
         this.userId = userId;
     }
 
-    public String[] getGoodId() {
-        return goodId;
+    public List<Goods> getGoods() {
+        return goods;
     }
 
-    public void setGoodId(String[] goodId) {
-        this.goodId = goodId;
+    public void setGoods(List<Goods> goods) {
+        this.goods = goods;
     }
 
-    public Integer[] getNums() {
+    public List<Integer> getNums() {
         return nums;
     }
 
-    public void setNums(Integer[] nums) {
+    public void setNums(List<Integer> nums) {
         this.nums = nums;
     }
 
-    public double[] getPrice() {
-        return price;
-    }
-
-    public void setPrice(double[] price) {
-        this.price = price;
-    }
 
     @Override
     public String toString() {
         return "ShoppingCart{" +
-                "userId=" + userId +
-                ", goodId=" + Arrays.toString(goodId) +
-                ", nums=" + Arrays.toString(nums) +
-                ", price=" + Arrays.toString(price) +
+                "userId='" + userId + '\'' +
+                ", goodId=" + goods +
+                ", nums=" + nums +
                 '}';
     }
 }

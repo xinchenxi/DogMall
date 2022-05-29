@@ -17,10 +17,10 @@
             <result property="status" column="status"/>
         </collection>
     </resultMap>-->
-    <resultMap id="AllUserFaorite" type="com.cdut.Vo.UserFavorite">
+    <!--<resultMap id="AllUserFaorite" type="com.cdut.Vo.UserFavorite">
         <result property="userId" column="user_id"/>
         <collection property="good" select="com.cdut.Dao.GoodsDao.selectGoodsById" column="good_id" autoMapping="true"/>
-    </resultMap>
+    </resultMap>-->
     <select id="listAllFavoriteGoods" resultType="com.cdut.Pojo.Goods" resultMap="com.cdut.Dao.GoodsDao.GoodsMap">
         select goods.* from userfavorite,goods where user_id=#{userId} and goods.good_id=userfavorite.good_id;
     </select>

@@ -36,5 +36,4 @@ public interface UserService {
      */
     public void deteleUserById(String userid);
 
-    public void updateUserGrade(String userid,Integer grade);
 }

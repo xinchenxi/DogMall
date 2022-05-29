@@ -25,7 +25,7 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public List<Goods> listGoodsPages(Integer start, Integer size, String pattern) {
-
+        pattern='%'+pattern+'%';
         List<Goods> goods=dao.listGoodsPages(pattern);
         return goods;
     }

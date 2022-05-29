@@ -20,7 +20,7 @@
         insert into userinfo set user_id=#{userId}, username=#{userName}
     </insert>
     <!--根据用户id查询用户信息-->
-    <select id="selectUserInfo">
+    <select id="selectUserInfo" resultType="com.cdut.Pojo.UserInfo">
         select * from userinfo where user_id=#{userId};
     </select>
 </mapper>

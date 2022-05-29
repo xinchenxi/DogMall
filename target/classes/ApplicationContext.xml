@@ -27,6 +27,8 @@
 
     <bean id="UserService" class="com.cdut.Service.Impl.UserServiceImpl">
         <property name="dao" ref="userDao"/>
+    </bean>
+    <bean id="UserInfoService" class="com.cdut.Service.Impl.UserInfoServiceImpl">
         <property name="userInfoDao" ref="userInfoDao"/>
     </bean>
     <bean id="SupplierService" class="com.cdut.Service.Impl.SupplierServiceImpl">
@@ -37,6 +39,9 @@
     </bean>
     <bean id="GoodsService" class="com.cdut.Service.Impl.GoodsServiceImpl">
         <property name="dao" ref="goodsDao"/>
+    </bean>
+    <bean id="ShoppingCartService" class="com.cdut.Service.Impl.ShoppingCartServiceImpl">
+        <property name="dao" ref="shoppingCartDao"/>
     </bean>
     <context:component-scan base-package="com.cdut.Service"/>
 </beans>

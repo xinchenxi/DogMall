@@ -2,6 +2,7 @@ package com.cdut.Controller;
 
 import com.cdut.Pojo.User;
 import com.cdut.Pojo.UserInfo;
+import com.cdut.Service.UserInfoService;
 import com.cdut.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,8 @@ public class TestController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private UserInfoService userInfoService;
     @RequestMapping("/userService.do")
     public ModelAndView User(){
         ModelAndView mv=new ModelAndView();
@@ -88,6 +91,6 @@ public class TestController {
     }
     @RequestMapping("updateUserGrade.do")
     public void user7(){
-        userService.updateUserGrade("3",2);
+        userInfoService.updateUserGrade("3",2);
     }
 }
