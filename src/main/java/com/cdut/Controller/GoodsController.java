@@ -54,5 +54,8 @@ public class GoodsController {
         System.out.println(goodsService.getListAllGoods());
         System.out.println(goodsService.getGoodsById("1"));
     }
-
+    @RequestMapping("findGoodsByPager.do")
+    public void goods8(){
+        System.out.println(goodsService.findGoodsByPager(1,3,"花"));
+    }
 }

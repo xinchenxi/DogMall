@@ -3,8 +3,11 @@ package com.cdut.Service.Impl;
 import com.cdut.Dao.GoodsDao;
 import com.cdut.Pojo.Goods;
 import com.cdut.Service.GoodsService;
+import com.cdut.Vo.Pager;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class GoodsServiceImpl implements GoodsService {
     private GoodsDao dao;
@@ -58,5 +61,18 @@ public class GoodsServiceImpl implements GoodsService {
     @Override
     public List<Goods> getGoodsById(String goodsId) {
         return dao.selectGoodsById("1");
+    }
+
+    @Override
+    public Pager<Goods> findGoodsByPager(int page, int size, String pattern){
+        Map<String, Object> params = new HashMap<String, Object>();
+        pattern='%'+pattern+'%';
+        params.put("page", page);
+        params.put("size", size);
+        Pager<Goods> pager = new Pager<Goods>();
+        List<Goods> list = dao.selectGoodsByPager(params,pattern);
+        pager.setRows(list);
+        pager.setTotal(dao.countGoodsPage(pattern));
+        return pager;
     }
 }

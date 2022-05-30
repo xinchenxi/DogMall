@@ -1,6 +1,8 @@
 package com.cdut.Service;
 
 import com.cdut.Pojo.Goods;
+import com.cdut.Vo.Pager;
+
 import java.util.List;
 
 public interface GoodsService {
@@ -22,4 +24,6 @@ public interface GoodsService {
     public List<Goods> getListGoodsBySupplierId(String supplierId);
 
     public List<Goods> getGoodsById(String goodsId);
+
+    public Pager<Goods> findGoodsByPager(int page, int size, String pattern);
 }

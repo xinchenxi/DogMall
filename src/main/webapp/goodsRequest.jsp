@@ -48,5 +48,8 @@
     <form action="/getListGoodsBySupplierId.do" method="post">
         <input type="submit" value="getListGoodsBySupplierId">
     </form>
+    <form action="/findGoodsByPager.do" method="post">
+        <input type="submit" value="findGoodsByPager">
+    </form>
 </body>
 </html>

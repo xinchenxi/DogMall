@@ -4,6 +4,8 @@ import com.cdut.Pojo.Goods;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
+
 public interface GoodsDao {
     /**
      * 获得商品的数量
@@ -14,9 +16,10 @@ public interface GoodsDao {
      */
     public List<Goods> listAllGoods();
     /**
+     * 已弃用，分页查询使用 selectGoodsByPager函数
      * 分页查询商品
      */
-    public List<Goods> listGoodsPages(String pattern);
+    //public List<Goods> listGoodsPages(String pattern);
     /**
      * 新增商品
      */
@@ -39,4 +42,18 @@ public interface GoodsDao {
     public List<Goods> getListGoodsBySupplierId(String supplierId);
 
     public List<Goods> selectGoodsById(String goodId);
+
+    /**
+     * 分页查找商品
+     * @param params
+     * @return
+     */
+    public List<Goods> selectGoodsByPager(@Param("params") Map<String, Object> params,@Param("pattern") String pattern);
+
+    /**
+     * 获得查询的商品总数
+     * @param pattern
+     * @return
+     */
+    public int countGoodsPage(String pattern);
 }

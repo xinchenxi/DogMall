@@ -44,4 +44,11 @@
     <select id="selectGoodsById" resultMap="GoodsMap">
         select * from goods where good_id=#{goodId}
     </select>
+    <select id="selectGoodsByPager" resultMap="GoodsMap">
+        select * from goods where good_name like #{pattern} and status=1
+    </select>
+
+    <select id="countGoodsPage" resultType="Integer">
+        select count(*) from goods where good_name like #{pattern} and status=1;
+    </select>
 </mapper>
