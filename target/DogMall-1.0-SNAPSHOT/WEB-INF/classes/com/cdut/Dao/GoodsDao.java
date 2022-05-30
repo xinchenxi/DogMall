@@ -16,9 +16,10 @@ public interface GoodsDao {
      */
     public List<Goods> listAllGoods();
     /**
+     * 已弃用，分页查询使用 selectGoodsByPager函数
      * 分页查询商品
      */
-    public List<Goods> listGoodsPages(String pattern);
+    //public List<Goods> listGoodsPages(String pattern);
     /**
      * 新增商品
      */

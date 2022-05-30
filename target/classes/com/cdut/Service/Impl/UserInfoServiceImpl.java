@@ -33,6 +33,11 @@ public class UserInfoServiceImpl implements UserInfoService {
         SnowFlakeUtil snowFlakeUtil=new SnowFlakeUtil(0,0);
         String userName=snowFlakeUtil.nextId();
         String userId=user.getUserid();
-        userInfoDao.insertUserInfo(userId,userName);
+        userInfoDao.insertUserInfo(userId,userName,"http://yangpai.cool:9000/mall/mall_1653894259778.jpg");
+    }
+
+    @Override
+    public void updateUserAvator(String userId, String imgUrl) {
+        userInfoDao.updateAvator(userId,imgUrl);
     }
 }

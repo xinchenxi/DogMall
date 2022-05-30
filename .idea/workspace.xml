@@ -10,19 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a346d3b6-d142-4d40-be92-5ab979b2c040" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Interceptor/PageInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Vo/Pager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Config/MinioConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Util/MinioUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/minio.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/625b7929-f41c-47ed-96b8-334e1fa15d3b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/625b7929-f41c-47ed-96b8-334e1fa15d3b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/GoodsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/GoodsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/GoodsDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/UserInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/UserInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/UserInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/UserInfoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Pojo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Pojo/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/UserInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/goodsRequest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/goodsRequest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/ApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/GoodsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.xml" afterDir="false" />
@@ -30,10 +40,13 @@
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/GoodsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/GoodsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/goodsRequest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/goodsRequest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Controller/GoodsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.xml" afterDir="false" />
@@ -41,6 +54,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Service/GoodsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/GoodsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
     </list>
     <list id="40f5db38-0ca4-405b-bef4-0d9cd539e35d" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,17 +136,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.45" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.45" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <deployment>
@@ -231,6 +234,8 @@
       <workItem from="1653718565208" duration="10565000" />
       <workItem from="1653812454036" duration="4419000" />
       <workItem from="1653871678116" duration="2865000" />
+      <workItem from="1653879341219" duration="3362000" />
+      <workItem from="1653885366472" duration="4914000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1653436802537</created>
@@ -253,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653813104437</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2022_5_29">
+      <created>1653879440148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653879440148</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,29 +279,30 @@
     <MESSAGE value="first" />
     <MESSAGE value="2022_5_27" />
     <MESSAGE value="2022_5_28" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022_5_28" />
+    <MESSAGE value="2022_5_29" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022_5_29" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1653384332103">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1653384332103" />
-    <state x="249" y="0" key="#Project_Structure" timestamp="1653292005457">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1653879754785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1653292005457" />
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1653879754785" />
     <state x="361" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1653816383810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1653816383810" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1653814994772">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1653895215783">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1653814994772" />
-    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1653813103320">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1653895215783" />
+    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1653879439052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1653813103320" />
+    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1653879439052" />
     <state width="430" height="438" key="DebuggerActiveHint" timestamp="1653815770856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -306,54 +319,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="640" y="310" width="255" height="279" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1653719050327" />
-    <state width="1232" height="185" key="GridCell.Tab.0.bottom" timestamp="1653816877065">
+    <state width="1232" height="237" key="GridCell.Tab.0.bottom" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653816877065" />
-    <state width="1232" height="185" key="GridCell.Tab.0.center" timestamp="1653816877065">
+    <state width="1232" height="237" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.0.center" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1653816877065" />
-    <state width="1232" height="185" key="GridCell.Tab.0.left" timestamp="1653816877064">
+    <state width="1232" height="237" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.0.left" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1653816877064" />
-    <state width="1232" height="185" key="GridCell.Tab.0.right" timestamp="1653816877065">
+    <state width="1232" height="237" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.0.right" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1653816877065" />
-    <state width="1232" height="185" key="GridCell.Tab.1.bottom" timestamp="1653816877066">
+    <state width="1232" height="237" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.1.bottom" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653816877066" />
-    <state width="1232" height="185" key="GridCell.Tab.1.center" timestamp="1653816877065">
+    <state width="1232" height="237" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.1.center" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1653816877065" />
-    <state width="1232" height="185" key="GridCell.Tab.1.left" timestamp="1653816877065">
+    <state width="1232" height="237" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.1.left" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1653816877065" />
-    <state width="1232" height="185" key="GridCell.Tab.1.right" timestamp="1653816877066">
+    <state width="1232" height="237" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.1.right" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1653816877066" />
-    <state width="1232" height="185" key="GridCell.Tab.2.bottom" timestamp="1653816877066">
+    <state width="1232" height="237" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.2.bottom" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653816877066" />
-    <state width="1232" height="185" key="GridCell.Tab.2.center" timestamp="1653816877066">
+    <state width="1232" height="237" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.2.center" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1653816877066" />
-    <state width="1232" height="185" key="GridCell.Tab.2.left" timestamp="1653816877066">
+    <state width="1232" height="237" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.2.left" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1653816877066" />
-    <state width="1232" height="185" key="GridCell.Tab.2.right" timestamp="1653816877066">
+    <state width="1232" height="237" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
+    <state width="1232" height="237" key="GridCell.Tab.2.right" timestamp="1653895531609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="185" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1653816877066" />
+    <state width="1232" height="237" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1653895531609" />
     <state width="1232" height="185" key="GridCell.Tab.3.bottom" timestamp="1653816578972">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -398,14 +411,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="281" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1653435551377" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1653813156603">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1653879770655">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1653813156603" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1653879770655" />
     <state x="178" y="73" key="new project wizard" timestamp="1653656268525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1653656268525" />
+    <state x="545" y="169" key="refactoring.ChangeSignatureDialog" timestamp="1653894571534">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="545" y="169" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1653894571534" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

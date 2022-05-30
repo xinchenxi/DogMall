@@ -90,6 +90,19 @@
       <artifactId>druid</artifactId>
       <version>1.1.12</version>
     </dependency>
+    <!--minio上传文件-->
+    <dependency>
+      <groupId>io.minio</groupId>
+      <artifactId>minio</artifactId>
+      <version>3.0.10</version>
+    </dependency>
+
+    <!-- alibaba的fastjson -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.51</version>
+    </dependency>
 
   </dependencies>
 

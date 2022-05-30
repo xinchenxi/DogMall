@@ -29,4 +29,9 @@ public interface UserInfoService {
      * @param user
      */
     public void addUserInfo(User user);
+
+    /**
+     * 更新用户头像
+     */
+    public void updateUserAvator(String userId,String imgUrl);
 }

@@ -32,5 +32,10 @@ life is a fucking movie.
 <form action="/deteleUserById.do" method="post">
     <input type="submit" value="deteleUserById">
 </form>
+
+<form accept-charset="UTF-8" action="/upload.do" method="post" enctype="multipart/form-data" target="_blank">
+    文件:<input type="file" name="file"/>
+    <input type="submit" value="上传"/>
+</form>
 </body>
 </html>

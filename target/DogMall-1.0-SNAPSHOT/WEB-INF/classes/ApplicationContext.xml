@@ -5,8 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--spring容器对象，用来创建service  dao entity对象-->
-    <context:property-placeholder location="classpath*:jdbc.properties"/>
+    <context:property-placeholder location="classpath*:*.properties"/>
 
+    <!--分页拦截器-->
     <bean id="pageInterceptor" class="com.cdut.Interceptor.PageInterceptor"/>
 
     <!--druid连接池-->
@@ -46,5 +47,16 @@
     <bean id="ShoppingCartService" class="com.cdut.Service.Impl.ShoppingCartServiceImpl">
         <property name="dao" ref="shoppingCartDao"/>
     </bean>
-    <context:component-scan base-package="com.cdut.Service"/>
+
+    <bean id="MinioConfig" class="com.cdut.Config.MinioConfig">
+        <property name="endpoint" value="${minio.endpoint}"/>
+        <property name="accesskey" value="${minio.accessKey}"/>
+        <property name="secretKey" value="${minio.secretKey}"/>
+     </bean>
+    <bean id="MinioUtil" class="com.cdut.Util.MinioUtil">
+        <property name="config" ref="MinioConfig"/>
+    </bean>
+    <context:annotation-config/>
+    <context:component-scan base-package="com.cdut.*"/>
+
 </beans>

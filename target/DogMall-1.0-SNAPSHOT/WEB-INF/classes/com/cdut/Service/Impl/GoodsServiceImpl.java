@@ -26,12 +26,6 @@ public class GoodsServiceImpl implements GoodsService {
         return dao.listAllGoods();
     }
 
-    @Override
-    public List<Goods> listGoodsPages(Integer start, Integer size, String pattern) {
-        pattern='%'+pattern+'%';
-        List<Goods> goods=dao.listGoodsPages(pattern);
-        return goods;
-    }
 
     @Override
     public void addGoods(Goods goods) {
@@ -75,4 +69,13 @@ public class GoodsServiceImpl implements GoodsService {
         pager.setTotal(dao.countGoodsPage(pattern));
         return pager;
     }
+
+    /**
+     * 已弃用分页查询商品使用 findGoodsByPager函数
+     @Override
+     public List<Goods> listGoodsPages(Integer start, Integer size, String pattern) {
+     pattern='%'+pattern+'%';
+     List<Goods> goods=dao.listGoodsPages(pattern);
+     return goods;
+     }*/
 }

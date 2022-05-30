@@ -22,9 +22,9 @@
     <select id="listAllGoods" resultType="com.cdut.Pojo.Goods" resultMap="GoodsMap">
         select * from goods;
     </select>
-    <select id="listGoodsPages" resultType="com.cdut.Pojo.Goods" resultMap="GoodsMap">
+    <!--<select id="listGoodsPages" resultType="com.cdut.Pojo.Goods" resultMap="GoodsMap">
         select * from goods where good_name like #{pattern} and status=1;
-    </select>
+    </select>-->
     <insert id="insertGoods">
         insert into goods values (#{goodId},#{goodName},#{nums},#{price},#{supplierId},#{describe},#{imgurl},#{status})
     </insert>

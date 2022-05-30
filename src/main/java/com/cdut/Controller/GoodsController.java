@@ -2,6 +2,7 @@ package com.cdut.Controller;
 
 import com.cdut.Pojo.Goods;
 import com.cdut.Service.GoodsService;
+import com.cdut.Vo.Pager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +20,7 @@ public class GoodsController {
     @RequestMapping("ListGoodPages.do")
     public ModelAndView goods1(){
         ModelAndView mv=new ModelAndView();
-        List<Goods> goods=goodsService.listGoodsPages(1,2,"花");
+        Pager<Goods> goods=goodsService.findGoodsByPager(1,2,"花");
         mv.addObject("返回结果",goods);
         mv.setViewName("result2.jsp");
         return mv;

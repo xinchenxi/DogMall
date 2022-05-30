@@ -11,8 +11,10 @@ public class UserInfo {
     private String address;
     private String phone;
     private Integer grade;
+    private String img;
 
-    public UserInfo(String userId, String username, String sex, String email, String address, String phone, Integer grade) {
+
+    public UserInfo(String userId, String username, String sex, String email, String address, String phone, Integer grade, String img) {
         this.userId = userId;
         this.username = username;
         this.sex = sex;
@@ -20,6 +22,7 @@ public class UserInfo {
         this.address = address;
         this.phone = phone;
         this.grade = grade;
+        this.img = img;
     }
 
     public String getUserId() {
@@ -30,7 +33,9 @@ public class UserInfo {
         this.userId = userId;
     }
 
-    public String getUsername() { return username; }
+    public String getUsername() {
+        return username;
+    }
 
     public void setUsername(String username) {
         this.username = username;
@@ -76,14 +81,25 @@ public class UserInfo {
         this.grade = grade;
     }
 
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
     @Override
     public String toString() {
         return "UserInfo{" +
-                "sex='" + sex + '\'' +
+                "userId='" + userId + '\'' +
+                ", username='" + username + '\'' +
+                ", sex='" + sex + '\'' +
                 ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 ", grade=" + grade +
+                ", img='" + img + '\'' +
                 '}';
     }
 }

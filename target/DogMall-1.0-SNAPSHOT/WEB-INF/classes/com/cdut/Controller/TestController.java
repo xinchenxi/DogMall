@@ -1,16 +1,22 @@
 package com.cdut.Controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.cdut.Pojo.User;
 import com.cdut.Pojo.UserInfo;
 import com.cdut.Service.UserInfoService;
 import com.cdut.Service.UserService;
+import com.cdut.Util.MinioUtil;
+import io.minio.errors.InvalidEndpointException;
+import io.minio.errors.InvalidPortException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 import com.cdut.Util.SnowFlakeUtil;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class TestController {
@@ -19,6 +25,13 @@ public class TestController {
     private UserService userService;
     @Autowired
     private UserInfoService userInfoService;
+
+    @Autowired
+    private MinioUtil minioUtil;
+
+    public TestController() throws InvalidPortException, InvalidEndpointException {
+    }
+
     @RequestMapping("/userService.do")
     public ModelAndView User(){
         ModelAndView mv=new ModelAndView();
@@ -61,7 +74,7 @@ public class TestController {
         user.setPassword(password);
 
         userService.addUser(user);
-
+        userInfoService.addUserInfo(user);
         User users =userService.getUserByAccount(account);
         mv.addObject("users",users);
         mv.setViewName("result.jsp");
@@ -82,7 +95,7 @@ public class TestController {
 
     @RequestMapping("updateUser.do")
     public void user5(){
-        userService.updateUser(new UserInfo("3","花花","女","99@qq","山西","193" ,1));
+        userService.updateUser(new UserInfo("3","花花","女","99@qq","山西","193" ,1,"http://yangpai.cool:9000/mall/mall_1653894259778.jpg"));
         //userService.deteleUserById("978697264128065536");
     }
     @RequestMapping("deteleUserById.do")
@@ -92,5 +105,33 @@ public class TestController {
     @RequestMapping("updateUserGrade.do")
     public void user7(){
         userInfoService.updateUserGrade("3",2);
+    }
+
+    @GetMapping("init.do")
+    public String init() {
+        return "file";
+    }
+
+    /**
+     * 上传
+     *
+     * @param file
+     * @param request
+     * @return
+     */
+    @PostMapping("/upload.do")
+    @ResponseBody
+    public String upload(@RequestParam(name = "file", required = false) MultipartFile file, HttpServletRequest request) {
+        JSONObject res = null;
+        try {
+            res = minioUtil.uploadAvatar("1",file, "mall");
+            String userId="980852303395291136";
+            userInfoService.updateUserAvator(userId,(String)res.get("msg"));
+        } catch (Exception e) {
+            e.printStackTrace();
+            res.put("code", 0);
+            res.put("msg", "上传失败");
+        }
+        return res.toJSONString();
     }
 }
