@@ -56,4 +56,6 @@ public interface GoodsDao {
      * @return
      */
     public int countGoodsPage(String pattern);
+
+    public void updateGoodsPicture(@Param("goodId")String goodId,@Param("imgurl") String imgurl);
 }

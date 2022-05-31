@@ -918,7 +918,7 @@ SELECT|sys.sys_config:null
 </ObjectGrants>
     </user>
     <table id="286" parent="3" name="goods"/>
-    <table id="287" parent="3" name="order"/>
+    <table id="287" parent="3" name="orders"/>
     <table id="288" parent="3" name="shop"/>
     <table id="289" parent="3" name="shoppingcart"/>
     <table id="290" parent="3" name="user"/>
@@ -993,12 +993,12 @@ SELECT|sys.sys_config:null
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="307" parent="287" name="Date">
+    <column id="307" parent="287" name="order_date">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="308" parent="287" name="price">
+    <column id="308" parent="287" name="total_price">
       <Position>5</Position>
       <DataType>decimal(10)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1016,14 +1016,14 @@ SELECT|sys.sys_config:null
       <ColNames>good_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="312" parent="287" name="order_ibfk_2">
+    <foreign-key id="312" parent="287" name="orders_ibfk_2">
       <ColNames>user_id</ColNames>
       <RefTableName>user</RefTableName>
       <RefColNames>user_id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="313" parent="287" name="order_ibfk_3">
+    <foreign-key id="313" parent="287" name="orders_ibfk_3">
       <ColNames>good_id</ColNames>
       <RefTableName>goods</RefTableName>
       <RefColNames>good_id</RefColNames>

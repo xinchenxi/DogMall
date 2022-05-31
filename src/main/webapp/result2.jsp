@@ -13,5 +13,6 @@
 <body>
     返回结果是:${返回结果}<br>
     查询所有商品:${goods}<br>
+    插入的商品图片是: <img src="${goods_picture}"><br>
 </body>
 </html>

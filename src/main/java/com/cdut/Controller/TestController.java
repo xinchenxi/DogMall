@@ -13,10 +13,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import com.cdut.Util.SnowFlakeUtil;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class TestController {
@@ -116,22 +120,31 @@ public class TestController {
      * 上传
      *
      * @param file
-     * @param request
      * @return
      */
     @PostMapping("/upload.do")
     @ResponseBody
-    public String upload(@RequestParam(name = "file", required = false) MultipartFile file, HttpServletRequest request) {
-        JSONObject res = null;
+    public ModelAndView upload(@RequestParam(name = "file", required = false) MultipartFile file,
+                               HttpSession session) {
+        HashMap<String,String> res = null;
+        ModelAndView mv=new ModelAndView();
         try {
+            //将minio的返回结果放到res中
             res = minioUtil.uploadAvatar("1",file, "mall");
-            String userId="980852303395291136";
-            userInfoService.updateUserAvator(userId,(String)res.get("msg"));
+            Iterator iter = res.entrySet().iterator();
+            while(iter.hasNext()){
+                HashMap.Entry entry = (HashMap.Entry) iter.next();
+                mv.addObject((String)entry.getKey(),(String)entry.getValue());
+            }
+            String userId="3";
+            userInfoService.updateUserAvator(userId,(String)res.get("user_Avator"));
         } catch (Exception e) {
             e.printStackTrace();
-            res.put("code", 0);
+            res.put("code", "0");
             res.put("msg", "上传失败");
         }
-        return res.toJSONString();
+
+        mv.setViewName("result.jsp");
+        return mv;
     }
 }

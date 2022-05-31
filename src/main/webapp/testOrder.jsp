@@ -1,18 +1,18 @@
 <%--
   Created by IntelliJ IDEA.
   User: 99244
-  Date: 2022/5/25
-  Time: 21:36
+  Date: 2022/5/31
+  Time: 21:17
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Goods结果</title>
+    <title>Order</title>
 </head>
 <body>
-    返回结果是:${返回结果}<br>
-    查询所有商品:${goods}<br>
-    插入的商品图片是: <img src="${goods_picture}"><br>
+    <form action="/selectGoodsByOrderId.do" method="post">
+        <input type="submit" value="selectGoodsByOrderId">
+    </form>
 </body>
 </html>

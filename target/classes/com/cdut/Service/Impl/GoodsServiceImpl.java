@@ -70,6 +70,11 @@ public class GoodsServiceImpl implements GoodsService {
         return pager;
     }
 
+    @Override
+    public void updateGoodPicture(String goodId, String imgurl) {
+        dao.updateGoodsPicture(goodId, imgurl);
+    }
+
     /**
      * 已弃用分页查询商品使用 findGoodsByPager函数
      @Override

@@ -51,5 +51,10 @@
     <form action="/findGoodsByPager.do" method="post">
         <input type="submit" value="findGoodsByPager">
     </form>
+<form action="/updatePicture.do" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+    <input type="text" name="goodId">
+    <input type="file" name="file">
+    <input type="submit" value="提交商品图片">
+</form>
 </body>
 </html>

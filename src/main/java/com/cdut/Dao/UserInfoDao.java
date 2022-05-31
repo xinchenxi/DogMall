@@ -28,5 +28,5 @@ public interface UserInfoDao {
      */
     public UserInfo selectUserInfo(String userId);
 
-    public void updateAvator(@Param("userId")String userId,@Param("ImgUrl")String ImgUrl);
+    public void updateAvator(@Param("userId")String userId,@Param("imgUrl")String imgUrl);
 }

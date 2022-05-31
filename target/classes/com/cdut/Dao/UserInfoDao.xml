@@ -24,6 +24,6 @@
         select * from userinfo where user_id=#{userId};
     </select>
     <update id="updateAvator">
-        update userinfo set img=#{ImgUrl} where user_id=#{userId}
+        update userinfo set img=#{imgUrl} where user_id=#{userId}
     </update>
 </mapper>

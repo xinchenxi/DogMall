@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cdut.Dao.OrderDao">
+    <resultMap id="OrderGoodsMap" type="com.cdut.Dto.OrderGoods">
+        <result property="goods.goodName" column="good_name"/>
+        <result property="goods.goodId" column="good_id"/>
+        <result property="goods.nums" column="nums"/>
+        <result property="goods.price" column="price"/>
+        <result property="goods.supplierId" column="supplier_id"/>
+        <result property="goods.describe" column="describes"/>
+        <result property="goods.imgurl" column="imgurl"/>
+        <result property="goods.status" column="status"/>
+        <result property="goodNum" column="good_nums"/>
+        <result property="goodsPrice" column="total_price"/>
+    </resultMap>
+    <select id="selectCountOrderByUserId" resultType="Integer">
+        select count(*) from orders where user_id=#{userId};
+    </select>
+    <select id="selectOrderIdByUserId" resultType="String">
+        select order_id from orders where user_id=#{userId};
+    </select>
+    <select id="selectGoodsByOrderId"  resultMap="OrderGoodsMap">
+            select goods.*,orders.good_nums,orders.total_price from goods,orders where order_id=#{orderId} and orders.good_id=goods.good_id;
+    </select>
+    <select id="selectDateByOrderId" resultType="String">
+        select order_date from orders where order_id=#{orderId} limit 1;
+    </select>
+</mapper>

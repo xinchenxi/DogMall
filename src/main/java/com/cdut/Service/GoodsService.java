@@ -25,6 +25,8 @@ public interface GoodsService {
 
     public Pager<Goods> findGoodsByPager(int page, int size, String pattern);
 
+    public void updateGoodPicture(String goodId,String imgurl);
+
     /*   弃用的分页查询 分页查询请使用 findGoodsByPager
     public List<Goods> listGoodsPages(Integer start,Integer size,String pattern);
     */

@@ -17,5 +17,6 @@
 根据账号查询用户信息:${info}<br>
 插入后用户的信息为:${users}<br>
 修改用户密码后的用户信息为:${user1}<br>
+用户头像:<img src="${user_Avator}"><br>
 </body>
 </html>

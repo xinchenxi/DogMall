@@ -30,6 +30,7 @@ life is a fucking movie.
 </form>
 
 <form action="/deteleUserById.do" method="post">
+    <input type="text" name="account">
     <input type="submit" value="deteleUserById">
 </form>
 

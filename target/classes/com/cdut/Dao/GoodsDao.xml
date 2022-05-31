@@ -22,9 +22,7 @@
     <select id="listAllGoods" resultType="com.cdut.Pojo.Goods" resultMap="GoodsMap">
         select * from goods;
     </select>
-    <!--<select id="listGoodsPages" resultType="com.cdut.Pojo.Goods" resultMap="GoodsMap">
-        select * from goods where good_name like #{pattern} and status=1;
-    </select>-->
+
     <insert id="insertGoods">
         insert into goods values (#{goodId},#{goodName},#{nums},#{price},#{supplierId},#{describe},#{imgurl},#{status})
     </insert>
@@ -51,4 +49,12 @@
     <select id="countGoodsPage" resultType="Integer">
         select count(*) from goods where good_name like #{pattern} and status=1;
     </select>
+
+    <update id="updateGoodsPicture">
+        update goods set imgurl=#{imgurl} where good_id=#{goodId};
+    </update>
+
+    <!--<select id="listGoodsPages" resultType="com.cdut.Pojo.Goods" resultMap="GoodsMap">
+    select * from goods where good_name like #{pattern} and status=1;
+</select>-->
 </mapper>
