@@ -14,5 +14,9 @@
     <form action="/selectGoodsByOrderId.do" method="post">
         <input type="submit" value="selectGoodsByOrderId">
     </form>
+<form action="/getOrderByOrderId.do" method="post">
+    订单号为:<input type="text" name="orderId"><br>
+    <input type="submit" value="getOrderByOrderId">
+</form>
 </body>
 </html>

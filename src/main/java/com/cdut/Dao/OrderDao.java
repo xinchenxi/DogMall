@@ -9,4 +9,7 @@ public interface OrderDao {
     public List<String> selectOrderIdByUserId(String userId);
     public List<OrderGoods> selectGoodsByOrderId(String orderId);
     public String selectDateByOrderId(String orderId);
+    public String selectUserIdByOrderId(String orderId);
+    public void insertOrder(String userId,String orderId,String dateStr,OrderGoods orderGoods);
+    public void deleteOrder(String order);
 }

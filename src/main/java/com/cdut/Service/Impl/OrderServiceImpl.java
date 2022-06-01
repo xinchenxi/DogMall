@@ -5,11 +5,14 @@ import com.cdut.Dto.OrderGoods;
 import com.cdut.Pojo.Goods;
 import com.cdut.Pojo.Order;
 import com.cdut.Service.OrderService;
+import com.cdut.Util.SnowFlakeUtil;
 import com.cdut.Vo.UserOrder;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 
 public class OrderServiceImpl implements OrderService {
@@ -52,5 +55,37 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public List<OrderGoods> selectGoodsByOrderId(String orderId) {
         return dao.selectGoodsByOrderId(orderId);
+    }
+
+    @Override
+    public UserOrder getOrderByOrderId(String orderId) {
+        UserOrder userOrder=new UserOrder();
+        List<Order> orders=new ArrayList<>();
+        Order order=new Order();
+        //设置订单号
+        order.setOrderId(orderId);
+        //设置订单日期
+        order.setDate(dao.selectDateByOrderId(orderId));
+        //设置订单中的所有商品
+        order.setGoods(dao.selectGoodsByOrderId(orderId));
+        //放入列表中
+        orders.add(order);
+        //将商品list放入UserOrder中
+        userOrder.setOrders(orders);
+        userOrder.setUserId(dao.selectUserIdByOrderId(orderId));
+        return userOrder;
+    }
+
+    @Override
+    public void addOrder(String userId, List<OrderGoods> goods) {
+        Date date=new Date();
+        DateFormat sdf=new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+         String dateStr=sdf.format(date);
+        //随机生成订单号
+        SnowFlakeUtil snowFlakeUtil=new SnowFlakeUtil(0,0);
+        String orderId=snowFlakeUtil.nextId();
+        for(OrderGoods good:goods) {
+            dao.insertOrder(userId, orderId, dateStr,good);
+        }
     }
 }
