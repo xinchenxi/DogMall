@@ -25,19 +25,28 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     @Override
     public void updateUserInfo(UserInfo userInfo) {
+
         userInfoDao.updateUser(userInfo);
+        userInfoDao.updateAvator(userInfo.getUserId(),userInfo.getImg());
     }
 
     @Override
-    public void addUserInfo(User user) {
+    public UserInfo addUserInfo(User user) {
         SnowFlakeUtil snowFlakeUtil=new SnowFlakeUtil(0,0);
         String userName=snowFlakeUtil.nextId();
         String userId=user.getUserid();
-        userInfoDao.insertUserInfo(userId,userName,"http://yangpai.cool:9000/mall/mall_1653894259778.jpg");
+        UserInfo userInfo=new UserInfo(userId,userName,"http://yangpai.cool:9000/mall/cc.jpg");
+        userInfoDao.insertUserInfo(userInfo.getUserId(),userInfo.getUsername(),userInfo.getImg(),1);
+        return userInfo;
     }
 
     @Override
     public void updateUserAvator(String userId, String imgUrl) {
         userInfoDao.updateAvator(userId,imgUrl);
+    }
+
+    @Override
+    public UserInfo findUserInfoById(String userId) {
+        return userInfoDao.selectUserInfo(userId);
     }
 }

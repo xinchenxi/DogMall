@@ -28,10 +28,14 @@ public interface UserInfoService {
      * 新建用户时顺便创建一个userInfo 自定义生成用户id
      * @param user
      */
-    public void addUserInfo(User user);
+    public UserInfo addUserInfo(User user);
 
     /**
      * 更新用户头像
      */
     public void updateUserAvator(String userId,String imgUrl);
+    /**
+     * 查询用户信息
+     */
+    public UserInfo findUserInfoById(String userId);
 }

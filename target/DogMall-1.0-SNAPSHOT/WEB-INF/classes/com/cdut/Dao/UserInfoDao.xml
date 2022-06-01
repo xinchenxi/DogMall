@@ -17,7 +17,7 @@
     </delete>
     <!--user表中插入一条数据时需要在userInfo里也插入一条数据-->
     <insert id="insertUserInfo">
-        insert into userinfo set user_id=#{userId}, username=#{userName},img=#{defaultImg};
+        insert into userinfo set user_id=#{userId}, username=#{userName},img=#{defaultImg},grade=#{grade};
     </insert>
     <!--根据用户id查询用户信息-->
     <select id="selectUserInfo" resultType="com.cdut.Pojo.UserInfo">

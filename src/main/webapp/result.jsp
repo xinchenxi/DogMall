@@ -11,12 +11,20 @@
     <title>结果</title>
 </head>
 <body>
-用户数量为:${nums}<br>
+<!--用户数量为:${nums}<br>
 用户信息为:${allUsers}<br>
 根据账号查询用户为: ${getuser}<br>
 根据账号查询用户信息:${info}<br>
 插入后用户的信息为:${users}<br>
 修改用户密码后的用户信息为:${user1}<br>
-用户头像:<img src="${user_Avator}"><br>
+用户头像:<img src="${user_Avator}"><br>-->
+
+用户id:<%=session.getAttribute("userId")%><br>
+用户名:<%=session.getAttribute("userName")%><br>
+用户头像 <img src="<%=session.getAttribute("userImg")%>"><br>
+用户账号:<%=session.getAttribute("user")%><br>
+用户信息:<%=session.getAttribute("userInfo")%><br>
+用户头像:<img src="${userInfo.img}" ><br>
+msg: ${msg}<br>
 </body>
 </html>

@@ -21,7 +21,8 @@ public interface UserInfoDao {
      */
     public void insertUserInfo(@Param("userId") String userId,
                                @Param("userName") String userName,
-                               @Param("defaultImg")String defaultImg);
+                               @Param("defaultImg")String defaultImg,
+                                @Param("grade") Integer grade);
 
     /**
      * 查询用户信息

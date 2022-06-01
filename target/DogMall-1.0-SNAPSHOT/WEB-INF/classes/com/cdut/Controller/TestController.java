@@ -1,6 +1,5 @@
 package com.cdut.Controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.cdut.Pojo.User;
 import com.cdut.Pojo.UserInfo;
 import com.cdut.Service.UserInfoService;
@@ -19,7 +18,6 @@ import java.util.Iterator;
 import java.util.List;
 import com.cdut.Util.SnowFlakeUtil;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller

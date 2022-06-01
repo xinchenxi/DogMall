@@ -27,7 +27,9 @@
         delete from user where user_id=#{userid};
 
     </delete>
-
+    <select id="getCountByAccount" resultType="integer">
+        select count(*) from user where account=#{account};
+    </select>
     <!--修改用户密码-->
     <update id="updatePassword">
         update user set password=#{password} where user_id=#{userId};

@@ -35,5 +35,6 @@ public interface UserService {
      * @param userid 用户id
      */
     public void deteleUserById(String userid);
+    public int getCountByAcoount(String account);
 
 }

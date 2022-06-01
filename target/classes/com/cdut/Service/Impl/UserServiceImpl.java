@@ -40,12 +40,8 @@ public class UserServiceImpl  implements UserService {
 
     @Override
     public void addUser(User user) {
-
-
         dao.insertUser(user);
         //再添加一个用户名加入到userInfo中
-
-
     }
 
     @Override
@@ -73,7 +69,10 @@ public class UserServiceImpl  implements UserService {
         dao.deleteUserById(userid);
     }
 
-
+    @Override
+    public int getCountByAcoount(String account) {
+        return dao.getCountByAccount(account);
+    }
 
 
 }

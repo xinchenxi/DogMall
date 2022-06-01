@@ -25,6 +25,15 @@ public class UserInfo {
         this.img = img;
     }
 
+    public UserInfo(String userId, String username, String img) {
+        this.userId = userId;
+        this.username = username;
+        this.img = img;
+    }
+
+    public UserInfo() {
+    }
+
     public String getUserId() {
         return userId;
     }

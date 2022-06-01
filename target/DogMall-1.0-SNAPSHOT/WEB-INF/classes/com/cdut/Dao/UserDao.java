@@ -39,4 +39,8 @@ public interface UserDao {
      */
     public void deleteUserById(String userId);
 
+    /**
+     * 根据账号查询数量
+     */
+    public int getCountByAccount(String account);
 }
