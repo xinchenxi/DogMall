@@ -26,5 +26,6 @@
 用户信息:<%=session.getAttribute("userInfo")%><br>
 用户头像:<img src="${userInfo.img}" ><br>
 msg: ${msg}<br>
+收藏夹 : ${userFavorite}<br>
 </body>
 </html>

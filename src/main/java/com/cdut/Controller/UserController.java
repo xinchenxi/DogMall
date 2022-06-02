@@ -2,10 +2,12 @@ package com.cdut.Controller;
 
 import com.cdut.Pojo.User;
 import com.cdut.Pojo.UserInfo;
+import com.cdut.Service.UserFavoriteService;
 import com.cdut.Service.UserInfoService;
 import com.cdut.Service.UserService;
 import com.cdut.Util.MinioUtil;
 import com.cdut.Util.SnowFlakeUtil;
+import com.cdut.Vo.UserFavorite;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,6 +28,8 @@ public class UserController {
     @Autowired
     UserInfoService userInfoService;
     @Autowired
+    UserFavoriteService userFavoriteService;
+    @Autowired
     private MinioUtil minioUtil;
 
     @RequestMapping("register.do")
@@ -42,9 +46,8 @@ public class UserController {
         userService.addUser(user);
         UserInfo userInfo= userInfoService.addUserInfo(user);
 
-        session.setAttribute("userId",user.getUserid());
-        session.setAttribute("userName",userInfo.getUsername());
-        session.setAttribute("userImg",userInfo.getImg());
+        session.setAttribute("user",user);
+        session.setAttribute("userInfo",userInfo);
         mv.setViewName("result.jsp");
         System.out.println("返回");
         return mv;
@@ -58,7 +61,6 @@ public class UserController {
             mv.setViewName("result.jsp");
             return mv;
         }else {//如果查到了就进入登录
-
             User user = userService.getUserByAccount(account);
             //密码输入正确
             if (user.getPassword().equals(password)) {
@@ -98,7 +100,6 @@ public class UserController {
             userInfoService.updateUserAvator(user.getUserid(),(String)res.get("user_Avator"));
         } catch (Exception e) {
             e.printStackTrace();
-            res.put("code", "0");
             res.put("msg", "上传失败");
         }
         userInfo.setImg((String)res.get("user_Avator"));
@@ -124,6 +125,21 @@ public class UserController {
         userService.updatePassword(user.getUserid(),oldpassword,newpassword);
         //更新用户账号信息
         session.setAttribute("user",userService.getUserByuserId(user.getUserid()));
+        mv.setViewName("result.jsp");
+        return mv;
+   }
+
+   @RequestMapping("getuserFavorite.do")
+   public ModelAndView getUserFavorite(HttpSession session){
+        ModelAndView mv=new ModelAndView();
+        User user= (User) session.getAttribute("user");
+        UserFavorite userFavorite=userFavoriteService.listUserAllFavorite(user.getUserid());
+        session.setAttribute("userFavorite",userFavorite);
+        if(0==userFavorite.getGood().size()){
+            session.setAttribute("msg",0);
+        }else{
+            session.setAttribute("msg",1);
+        }
         mv.setViewName("result.jsp");
         return mv;
    }

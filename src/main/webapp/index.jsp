@@ -59,5 +59,8 @@ life is a fucking movie.
     新密码:<input type="password" name="newpassword">
     <input type="submit" value="修改密码">
 </form>
+<form action="/getuserFavorite.do" method="post">
+    <input type="submit" value="查看收藏夹">
+</form>
 </body>
 </html>
