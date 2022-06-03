@@ -19,13 +19,15 @@
 修改用户密码后的用户信息为:${user1}<br>
 用户头像:<img src="${user_Avator}"><br>-->
 
-用户id:<%=session.getAttribute("userId")%><br>
-用户名:<%=session.getAttribute("userName")%><br>
-用户头像 <img src="<%=session.getAttribute("userImg")%>"><br>
+<!--用户id:${user.userid}<br>
+用户名:${user.account}<br>
+用户头像 <img src="${userInfo.img}"><br>
 用户账号:<%=session.getAttribute("user")%><br>
 用户信息:<%=session.getAttribute("userInfo")%><br>
-用户头像:<img src="${userInfo.img}" ><br>
+用户头像:<img src="${userInfo.img}" ><br>-->
 msg: ${msg}<br>
 收藏夹 : ${userFavorite}<br>
+
+购物车:${Cart}<br>
 </body>
 </html>

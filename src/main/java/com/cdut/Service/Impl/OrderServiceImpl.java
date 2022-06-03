@@ -42,7 +42,15 @@ public class OrderServiceImpl implements OrderService {
             order.setOrderId(orderid);
 
             //开始根据orderid查询商品 查到一系列id后set到order的Goods属性中
-            order.setGoods(dao.selectGoodsByOrderId(orderid));
+            List<OrderGoods> goodsList=dao.selectGoodsByOrderId(orderid);
+            order.setGoods(goodsList);
+            double OrderPirce=0.0;
+            for (OrderGoods ordergoods: goodsList) {
+                OrderPirce+=ordergoods.getGoodsPrice();
+            }
+            //将订单总金额加入Order中
+            order.setOrderprice(OrderPirce);
+
             //查询订单日期插入到date
             order.setDate(dao.selectDateByOrderId(orderid));
             //将单个的order放入到list中
@@ -66,8 +74,14 @@ public class OrderServiceImpl implements OrderService {
         order.setOrderId(orderId);
         //设置订单日期
         order.setDate(dao.selectDateByOrderId(orderId));
-        //设置订单中的所有商品
-        order.setGoods(dao.selectGoodsByOrderId(orderId));
+        List<OrderGoods> goodsList=dao.selectGoodsByOrderId(orderId);
+        order.setGoods(goodsList);
+        double OrderPirce=0.0;
+        for (OrderGoods ordergoods: goodsList) {
+            OrderPirce+=ordergoods.getGoodsPrice();
+        }
+        //将订单总金额加入Order中
+        order.setOrderprice(OrderPirce);
         //放入列表中
         orders.add(order);
         //将商品list放入UserOrder中
@@ -87,5 +101,10 @@ public class OrderServiceImpl implements OrderService {
         for(OrderGoods good:goods) {
             dao.insertOrder(userId, orderId, dateStr,good);
         }
+    }
+
+    @Override
+    public int getCountOrderByUserId(String userId) {
+        return dao.selectCountOrderByUserId(userId);
     }
 }

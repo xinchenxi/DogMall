@@ -49,4 +49,9 @@ public class UserInfoServiceImpl implements UserInfoService {
     public UserInfo findUserInfoById(String userId) {
         return userInfoDao.selectUserInfo(userId);
     }
+
+    @Override
+    public String findUserImg(String userId) {
+        return userInfoDao.selectUserImgByUserId(userId);
+    }
 }

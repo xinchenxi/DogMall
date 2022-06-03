@@ -20,5 +20,8 @@
 <form action="/priceIncheckGoods.do" method="post">
     <input type="submit" value="priceIncheckGoods">
 </form>
+<form action="/listCart.do" method="post">
+    <input type="submit" value="列出商品">
+</form>
 </body>
 </html>

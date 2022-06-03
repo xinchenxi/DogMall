@@ -45,7 +45,6 @@ public class MinioUtil {
     public HashMap<String,String> uploadAvatar(String userId, MultipartFile file, String bucketName) throws Exception {
         MinioClient client=config.minioClient();
         HashMap<String,String> res = new HashMap<>();
-        res.put("code", "0");
         // 判断上传文件是否为空
         if (null == file || 0 == file.getSize()) {
             res.put("msg", "上传文件不能为空");
@@ -60,7 +59,6 @@ public class MinioUtil {
             String fileName = userId + "_"+"Avator_" + System.currentTimeMillis() + originalFilename.substring(originalFilename.lastIndexOf("."));
             // 开始上传
             client.putObject(bucketName, fileName, file.getInputStream(), file.getContentType());
-            res.put("code", "1");
             res.put("user_Avator", config.getEndpoint() + "/" + bucketName + "/" + fileName);
             return res;
         }  catch (Exception e) {
@@ -79,7 +77,6 @@ public class MinioUtil {
     public HashMap<String,String> uploadgoodsPicture(String goodId, MultipartFile file, String bucketName) throws Exception {
         MinioClient client=config.minioClient();
         HashMap<String,String> res = new HashMap<>();
-        res.put("code", "0");
         // 判断上传文件是否为空
         if (null == file || 0 == file.getSize()) {
             res.put("msg", "上传文件不能为空");
@@ -95,7 +92,6 @@ public class MinioUtil {
             // 开始上传
             client.putObject(bucketName, fileName, file.getInputStream(), file.getContentType());
             //上传成功后才能执行放入map操作
-            res.put("code", "1");
             res.put("goods_picture", config.getEndpoint() + "/" + bucketName + "/" + fileName);
             return res;
         }  catch (Exception e) {

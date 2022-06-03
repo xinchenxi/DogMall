@@ -23,6 +23,10 @@ public class Order {
      * 订单创建的日期
      */
     private String date;
+    /**
+     * 订单的总价格
+     */
+    private  double orderprice;
 
     public String getOrderId() {
         return orderId;
@@ -49,12 +53,21 @@ public class Order {
         this.date = date;
     }
 
+    public double getOrderprice() {
+        return orderprice;
+    }
+
+    public void setOrderprice(double orderprice) {
+        this.orderprice = orderprice;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
                 "orderId='" + orderId + '\'' +
                 ", goods=" + goods +
-                ", date=" + date +
+                ", date='" + date + '\'' +
+                ", orderprice=" + orderprice +
                 '}';
     }
 }

@@ -26,4 +26,7 @@
     <update id="updateAvator">
         update userinfo set img=#{imgUrl} where user_id=#{userId}
     </update>
+    <select id="selectUserImgByUserId" resultType="String">
+        select img from userinfo where user_id=#{userId};
+    </select>
 </mapper>

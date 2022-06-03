@@ -7,6 +7,7 @@ import com.cdut.Pojo.UserInfo;
 import com.cdut.Service.UserService;
 import com.cdut.Util.SnowFlakeUtil;
 
+import java.util.HashMap;
 import java.util.List;
 //没完呢
 //再添加一个用户名加入到userInfo中
@@ -50,18 +51,20 @@ public class UserServiceImpl  implements UserService {
     }
 
     @Override
-    public void updatePassword(String userId, String oldpwd, String newpwd) {
+    public HashMap<String,String> updatePassword(String userId, String oldpwd, String newpwd) {
+        HashMap<String,String> map=new HashMap<>();
         User user=dao.getUserByuserId(userId);
-        System.out.println("数据库中的密码为:"+user.getPassword()+"\n"+"输入的旧密码为:"+oldpwd);
         if(oldpwd.equals(user.getPassword())){
-            if(newpwd.equals(oldpwd)) {
-                System.out.println("新密码不能与旧密码一致");
-            }else{
+            if(newpwd.equals(oldpwd)) {//新旧密码相同
+                map.put("msg","1");
+            }else{//更新密码
                 dao.updatePassword(userId, newpwd);
+                map.put("msg","2");
             }
-        }else{
-            System.out.println("密码错误");
+        }else{//密码错误
+            map.put("msg","3");
         }
+        return map;
     }
 
     @Override

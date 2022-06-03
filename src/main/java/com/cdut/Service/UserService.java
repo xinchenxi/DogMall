@@ -3,6 +3,7 @@ package com.cdut.Service;
 import com.cdut.Pojo.User;
 import com.cdut.Pojo.UserInfo;
 
+import java.util.HashMap;
 import java.util.List;
 
 public interface UserService {
@@ -28,7 +29,7 @@ public interface UserService {
      * @param oldpwd 旧密码
      * @param newpwd 新密码
      */
-    public void updatePassword(String userId, String oldpwd,String newpwd);
+    public HashMap<String,String> updatePassword(String userId, String oldpwd, String newpwd);
 
     /**
      * 根据用户id删除用户

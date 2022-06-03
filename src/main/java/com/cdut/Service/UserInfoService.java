@@ -38,4 +38,9 @@ public interface UserInfoService {
      * 查询用户信息
      */
     public UserInfo findUserInfoById(String userId);
+
+    /**
+     * 获得用户头像
+     */
+    public String findUserImg(String userId);
 }

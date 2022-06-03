@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.util.*;
 
 @Controller
@@ -25,9 +26,10 @@ public class GoodsController {
     private MinioUtil minioUtil;
 
     @RequestMapping("ListGoodPages.do")
-    public ModelAndView goods1() {
+    public ModelAndView ListAllLikelyGoodsByPager(@RequestParam("goodsname") String goodsname, HttpSession session) {
         ModelAndView mv = new ModelAndView();
-        Pager<Goods> goods = goodsService.findGoodsByPager(1, 2, "花");
+        Pager<Goods> goods = goodsService.findGoodsByPager(1, 2, goodsname);
+        session.setAttribute("goods",goods);
         mv.addObject("返回结果", goods);
         mv.setViewName("result2.jsp");
         return mv;

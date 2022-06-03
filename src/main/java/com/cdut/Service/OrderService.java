@@ -10,4 +10,5 @@ public interface OrderService {
     public List<OrderGoods> selectGoodsByOrderId(String orderId);
     public UserOrder getOrderByOrderId(String orderId);
     public void addOrder(String userId,List<OrderGoods> goods);
+    public int getCountOrderByUserId(String userId);
 }

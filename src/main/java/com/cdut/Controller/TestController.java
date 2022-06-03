@@ -7,6 +7,7 @@ import com.cdut.Service.UserService;
 import com.cdut.Util.MinioUtil;
 import io.minio.errors.InvalidEndpointException;
 import io.minio.errors.InvalidPortException;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -144,5 +145,9 @@ public class TestController {
 
         mv.setViewName("result.jsp");
         return mv;
+    }
+    @RequestMapping("testMd5.do")
+    public void testmd5(String password){
+        System.out.println(DigestUtils.md5Hex(password));
     }
 }
