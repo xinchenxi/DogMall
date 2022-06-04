@@ -1,10 +1,12 @@
 package com.cdut.Service;
 
 import com.cdut.Pojo.Goods;
+import com.cdut.Pojo.ShoppingCartGoods;
+
 import java.util.List;
 public interface ShoppingCartService {
 
-    public List<Goods> listCartByUserId(String userId);
+    public List<ShoppingCartGoods> listCartByUserId(String userId);
 
     public void clearCart(String userId);
 

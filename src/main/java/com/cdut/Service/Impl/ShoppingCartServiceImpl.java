@@ -1,7 +1,7 @@
 package com.cdut.Service.Impl;
 
 import com.cdut.Dao.ShoppingCartDao;
-import com.cdut.Pojo.Goods;
+import com.cdut.Pojo.ShoppingCartGoods;
 import com.cdut.Service.ShoppingCartService;
 
 import java.util.ArrayList;
@@ -15,8 +15,15 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
-    public List<Goods> listCartByUserId(String userId) {
-        return dao.listCartByUserId(userId);
+    public List<ShoppingCartGoods> listCartByUserId(String userId) {
+        List<ShoppingCartGoods> shoppingCartGoods=dao.listCartByUserId(userId);
+        for (ShoppingCartGoods shoppingCartGoods1:shoppingCartGoods){
+            double price=shoppingCartGoods1.getGoods().getPrice();
+            shoppingCartGoods1.setGoodsnum(dao.getGoodsnumsInCart(userId,shoppingCartGoods1.getGoods().getGoodId()));
+            int num=shoppingCartGoods1.getGoodsnum();
+            shoppingCartGoods1.setGoodsprice(price*num);
+        }
+        return shoppingCartGoods;
     }
 
     @Override

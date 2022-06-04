@@ -22,7 +22,7 @@ public class SupplierController {
         List<Supplier> suppliers=supplierService.ListAllSupplier();
         mv.addObject("nums",nums);
         mv.addObject("allSupplier",suppliers);
-        mv.setViewName("result1.jsp");
+        mv.setViewName("test/result1.jsp");
         return mv;
     }
 
@@ -31,7 +31,7 @@ public class SupplierController {
         System.out.println(supplierService.findSuppliereBySupplierId("123"));
         System.out.println(supplierService.finSupplierByUserId("1"));
         supplierService.addSupplier(new Supplier("3","147","中国知网","北京","文化"));
-        return "result.jsp";
+        return "test/result.jsp";
     }
 
     @RequestMapping("updateSupplier.do")

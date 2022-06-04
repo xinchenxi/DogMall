@@ -10,340 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a346d3b6-d142-4d40-be92-5ab979b2c040" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/QQ-weixin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/adv01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/adv02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/banner01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/banner02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/banner03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/bar_code.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/clock.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/clock.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/find-password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods006.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods007.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods008.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods/goods009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/goods_450.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/icons02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/interval_line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/left_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/login_banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/logo02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/pay_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/pic_code.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/register_banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/shine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/shop_cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/slide01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/slide02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/slide03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/slide04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/stars.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/success.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/time_count_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/user/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/user/name.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/user/password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/updateUserInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user_center_info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user_center_order.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user_center_pass.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Pojo/ShoppingCartGoods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/625b7929-f41c-47ed-96b8-334e1fa15d3b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/625b7929-f41c-47ed-96b8-334e1fa15d3b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/SupplierController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/OrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/OrderDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/UserInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/UserInfoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/UserInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/UserInfoDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Pojo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Pojo/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/UserInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Util/MinioUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Util/MinioUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/UserFavoriteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Controller/UserFavoriteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/ShoppingCartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/ShoppingCartDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/ShoppingCartDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Dao/ShoppingCartDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Pojo/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Pojo/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/ShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/Impl/ShoppingCartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cdut/Service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cdut/Service/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/goodsRequest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/goodsRequest.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/testCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/testCart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/ApplicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/Mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Config/MinioConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Config/MinioConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/GoodsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/GoodsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/ShoppingCartController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/ShoppingCartController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/SupplierController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/SupplierController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/UserFavoriteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Controller/UserFavoriteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/GoodsDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/OrderDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/OrderDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/OrderDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/ShoppingCartDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/ShoppingCartDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/ShoppingCartDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/SupplierDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/SupplierDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/SupplierDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserFavoriteDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserFavoriteDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserFavoriteDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserInfoDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserInfoDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dao/UserInfoDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dto/OrderGoods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Dto/OrderGoods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Interceptor/PageInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Interceptor/PageInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/Goods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/Goods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/ShoppingCart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/ShoppingCart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/Supplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/Supplier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/UserFavorite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/UserFavorite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Pojo/UserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/GoodsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/GoodsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/GoodsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/GoodsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/ShoppingCartServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/ShoppingCartServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/SupplierServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/SupplierServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/UserFavoriteServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/UserFavoriteServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/UserInfoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/UserInfoServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/Impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/ShoppingCartService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/ShoppingCartService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/SupplierService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/SupplierService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/UserFavoriteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/UserFavoriteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/UserInfoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/UserInfoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Util/MinioUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Util/MinioUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Util/SnowFlakeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Util/SnowFlakeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Vo/Pager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Vo/Pager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Vo/SupplierGoods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Vo/SupplierGoods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Vo/UserFavorite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Vo/UserFavorite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Vo/UserOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/com/cdut/Vo/UserOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/minio.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/springmvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/classes/sql/mall.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/annotations-3.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.51.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/google-http-client-1.20.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/google-http-client-xml-1.20.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/guava-18.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.pr3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.0.pr3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.0.pr3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/jcip-annotations-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/joda-time-2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/jsp-api-2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/jsr305-3.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/minio-3.0.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.5.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/okhttp-3.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/okio-1.12.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/servlet-api-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/lib/xpp3-1.1.4c.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/goodsRequest.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/result.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/result1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shoppingcart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/result2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/result3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/testCart.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/testOrder.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/DogMall-1.0-SNAPSHOT/testSupplier.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Config/MinioConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Config/MinioConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/GoodsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/GoodsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/ShoppingCartController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/ShoppingCartController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/SupplierController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/SupplierController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/UserFavoriteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Controller/UserFavoriteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/GoodsDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/OrderDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/OrderDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/OrderDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/ShoppingCartDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/ShoppingCartDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/ShoppingCartDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/SupplierDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/SupplierDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/SupplierDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserFavoriteDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserFavoriteDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserFavoriteDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserInfoDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserInfoDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dao/UserInfoDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dto/OrderGoods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Dto/OrderGoods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Interceptor/PageInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Interceptor/PageInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/Goods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/Goods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/ShoppingCart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/ShoppingCart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/Supplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/Supplier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/UserFavorite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/UserFavorite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Pojo/UserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/GoodsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/GoodsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/GoodsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/GoodsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/ShoppingCartServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/ShoppingCartServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/SupplierServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/SupplierServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/UserFavoriteServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/UserFavoriteServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/UserInfoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/UserInfoServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/Impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/OrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/ShoppingCartService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/ShoppingCartService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/SupplierService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/SupplierService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/UserFavoriteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/UserFavoriteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/UserInfoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/UserInfoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Util/MinioUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Util/MinioUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Util/SnowFlakeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Util/SnowFlakeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Vo/Pager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Vo/Pager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Vo/SupplierGoods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Vo/SupplierGoods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Vo/UserFavorite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Vo/UserFavorite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Vo/UserOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cdut/Vo/UserOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/minio.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/mall.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/result1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/result1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/result2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/result2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/result3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/result3.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/shoppingcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/shoppingcart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/testCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/testCart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/testOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/testOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/testSupplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test/testSupplier.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateUserInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateUserInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user_center_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user_center_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user_center_order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user_center_order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user_center_pass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user_center_pass.jsp" afterDir="false" />
     </list>
     <list id="40f5db38-0ca4-405b-bef4-0d9cd539e35d" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -359,9 +55,9 @@
         <option value="spring-beans.schema" />
         <option value="mybatis-mapper" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -419,6 +115,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\webapp\css" />
+      <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\webapp" />
+      <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\resources\sql" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cdut.Pojo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cdut.Vo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\webapp" />
       <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\webapp\css" />
@@ -426,16 +133,19 @@
       <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\webapp\html" />
       <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\target\classes\com\cdut\Dao" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cdut.Vo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\webapp\css" />
-      <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\webapp" />
-      <recent name="D:\1\1\计算机引论\大三下学期\高级Web课设\DogMall\src\main\resources\sql" />
-    </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.45" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.45" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <deployment>
@@ -553,6 +263,11 @@
       <workItem from="1654236595483" duration="31000" />
       <workItem from="1654236672711" duration="13795000" />
       <workItem from="1654254581803" duration="8164000" />
+      <workItem from="1654263050995" duration="83000" />
+      <workItem from="1654265206362" duration="163000" />
+      <workItem from="1654302114605" duration="5590000" />
+      <workItem from="1654307734743" duration="3516000" />
+      <workItem from="1654324535373" duration="5392000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1653436802537</created>
@@ -617,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654136399087</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2022_6_3 个人中心页面 包括基本信息 修改密码 展示订单 页面">
+      <created>1654263115297</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654263115297</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +359,8 @@
     <MESSAGE value="2022_6_1 dao和service写完了" />
     <MESSAGE value="2022_6_1 1.dao和service写完了 2.写了一部分userController" />
     <MESSAGE value="2022_6_1UserController" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022_6_1UserController" />
+    <MESSAGE value="2022_6_3 个人中心页面 包括基本信息 修改密码 展示订单 页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022_6_3 个人中心页面 包括基本信息 修改密码 展示订单 页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="523" y="0" key="#Auto_Import" timestamp="1654045410753">
@@ -652,18 +375,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1654140842760" />
-    <state x="292" y="246" key="#Template_Data_Languages" timestamp="1654239540071">
+    <state x="292" y="246" key="#Template_Data_Languages" timestamp="1654325705317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="292" y="246" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1654239540071" />
+    <state x="292" y="246" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1654325705317" />
     <state x="361" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1653816383810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1653816383810" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1654258246548">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1654306560660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1654258246548" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1654306560660" />
     <state x="386" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1654168092610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -672,18 +395,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1654250252152" />
-    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1654136397971">
+    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1654263112896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1654136397971" />
+    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1654263112896" />
     <state width="430" height="438" key="DebuggerActiveHint" timestamp="1653815770856">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="430" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1653815770856" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1654170918688">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1654326037201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1654170918688" />
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1654326037201" />
     <state x="579" y="331" key="Github.CreateGistDialog" timestamp="1654239952260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -692,70 +415,70 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="640" y="310" width="255" height="279" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1653719050327" />
-    <state width="1232" height="280" key="GridCell.Tab.0.bottom" timestamp="1654262756666">
+    <state width="1232" height="280" key="GridCell.Tab.0.bottom" timestamp="1654329510274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654262756666" />
-    <state width="1232" height="280" key="GridCell.Tab.0.center" timestamp="1654262756666">
+    <state width="1232" height="280" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654329510274" />
+    <state width="1232" height="280" key="GridCell.Tab.0.center" timestamp="1654329510274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654262756666" />
-    <state width="1232" height="280" key="GridCell.Tab.0.left" timestamp="1654262756666">
+    <state width="1232" height="280" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1654329510274" />
+    <state width="1232" height="280" key="GridCell.Tab.0.left" timestamp="1654329510274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654262756666" />
-    <state width="1232" height="280" key="GridCell.Tab.0.right" timestamp="1654262756666">
+    <state width="1232" height="280" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1654329510274" />
+    <state width="1232" height="280" key="GridCell.Tab.0.right" timestamp="1654329510274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654262756666" />
-    <state width="1232" height="280" key="GridCell.Tab.1.bottom" timestamp="1654262756666">
+    <state width="1232" height="280" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1654329510274" />
+    <state width="1232" height="280" key="GridCell.Tab.1.bottom" timestamp="1654329510171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654262756666" />
-    <state width="1232" height="280" key="GridCell.Tab.1.center" timestamp="1654262756666">
+    <state width="1232" height="280" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654329510171" />
+    <state width="1232" height="280" key="GridCell.Tab.1.center" timestamp="1654329510171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1654262756666" />
-    <state width="1232" height="280" key="GridCell.Tab.1.left" timestamp="1654262756666">
+    <state width="1232" height="280" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1654329510171" />
+    <state width="1232" height="280" key="GridCell.Tab.1.left" timestamp="1654329510171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1654262756666" />
-    <state width="1232" height="280" key="GridCell.Tab.1.right" timestamp="1654262756666">
+    <state width="1232" height="280" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1654329510171" />
+    <state width="1232" height="280" key="GridCell.Tab.1.right" timestamp="1654329510171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1654262756666" />
-    <state width="1232" height="280" key="GridCell.Tab.2.bottom" timestamp="1654262756667">
+    <state width="1232" height="280" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1654329510171" />
+    <state width="1232" height="280" key="GridCell.Tab.2.bottom" timestamp="1654329510171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654262756667" />
-    <state width="1232" height="280" key="GridCell.Tab.2.center" timestamp="1654262756667">
+    <state width="1232" height="280" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654329510171" />
+    <state width="1232" height="280" key="GridCell.Tab.2.center" timestamp="1654329510171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1654262756667" />
-    <state width="1232" height="280" key="GridCell.Tab.2.left" timestamp="1654262756667">
+    <state width="1232" height="280" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1654329510171" />
+    <state width="1232" height="280" key="GridCell.Tab.2.left" timestamp="1654329510171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1654262756667" />
-    <state width="1232" height="280" key="GridCell.Tab.2.right" timestamp="1654262756667">
+    <state width="1232" height="280" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1654329510171" />
+    <state width="1232" height="280" key="GridCell.Tab.2.right" timestamp="1654329510171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1654262756667" />
-    <state width="1232" height="280" key="GridCell.Tab.3.bottom" timestamp="1654260286632">
+    <state width="1232" height="280" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1654329510171" />
+    <state width="1232" height="280" key="GridCell.Tab.3.bottom" timestamp="1654309340285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654260286632" />
-    <state width="1232" height="280" key="GridCell.Tab.3.center" timestamp="1654260286632">
+    <state width="1232" height="280" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1654309340285" />
+    <state width="1232" height="280" key="GridCell.Tab.3.center" timestamp="1654309340285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1654260286632" />
-    <state width="1232" height="280" key="GridCell.Tab.3.left" timestamp="1654260286632">
+    <state width="1232" height="280" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1654309340285" />
+    <state width="1232" height="280" key="GridCell.Tab.3.left" timestamp="1654309340285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1654260286632" />
-    <state width="1232" height="280" key="GridCell.Tab.3.right" timestamp="1654260286632">
+    <state width="1232" height="280" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1654309340285" />
+    <state width="1232" height="280" key="GridCell.Tab.3.right" timestamp="1654309340285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1232" height="280" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1654260286632" />
+    <state width="1232" height="280" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1654309340285" />
     <state width="1232" height="238" key="GridCell.Tab.4.bottom" timestamp="1653565805243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -788,10 +511,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="281" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1653435551377" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1654136631501">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1654263125919">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1654136631501" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1654263125919" />
     <state x="489" y="115" width="1023" height="522" key="dock-window-1" timestamp="1654002361257">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -814,6 +537,15 @@
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1654152483341" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cdut/Controller/ShoppingCartController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile" memberName="filename" />

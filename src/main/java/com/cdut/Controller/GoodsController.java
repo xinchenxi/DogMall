@@ -31,7 +31,7 @@ public class GoodsController {
         Pager<Goods> goods = goodsService.findGoodsByPager(1, 2, goodsname);
         session.setAttribute("goods",goods);
         mv.addObject("返回结果", goods);
-        mv.setViewName("result2.jsp");
+        mv.setViewName("test/result2.jsp");
         return mv;
     }
 
@@ -40,7 +40,7 @@ public class GoodsController {
         ModelAndView mv = new ModelAndView();
         List<Goods> goods = goodsService.getListGoodsBySupplierId("123");
         mv.addObject("goods", goods);
-        mv.setViewName("result2.jsp");
+        mv.setViewName("test/result2.jsp");
         return mv;
     }
 
@@ -97,7 +97,7 @@ public class GoodsController {
             res.put("code", "0");
             res.put("msg", "上传失败");
         }
-        mv.setViewName("result2.jsp");
+        mv.setViewName("test/result2.jsp");
         return mv;
     }
 

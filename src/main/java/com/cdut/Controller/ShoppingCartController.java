@@ -1,5 +1,7 @@
 package com.cdut.Controller;
 
+import com.cdut.Pojo.Goods;
+import com.cdut.Pojo.ShoppingCartGoods;
 import com.cdut.Pojo.User;
 import com.cdut.Service.ShoppingCartService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,10 +44,18 @@ public class ShoppingCartController {
     @RequestMapping("/listCart.do")
     public ModelAndView listAllShoppingCartByUserId(HttpSession session){
         ModelAndView mv=new ModelAndView();
-        User user= (User) session.getAttribute("user");
-        System.out.println(shoppingCartService.listCartByUserId(user.getUserid()));
-        session.setAttribute("Cart",shoppingCartService.listCartByUserId(user.getUserid()));
-        mv.setViewName("result.jsp");
-        return mv;
+        if( session.getAttribute("user")==null){//没登录就跳转去登陆
+            mv.setViewName("login.jsp");
+            return mv;
+        }else {
+            User user= (User) session.getAttribute("user");
+            List<ShoppingCartGoods> goods=shoppingCartService.listCartByUserId(user.getUserid());
+            System.out.println(goods);
+            session.setAttribute("Cart", goods);
+            session.setAttribute("CartGoodsNum", goods.size());
+            mv.setViewName("cart.jsp");
+            return mv;
+        }
+
     }
 }

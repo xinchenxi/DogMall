@@ -18,7 +18,7 @@ public class UserFavoriteController {
         ModelAndView mv=new ModelAndView();
         UserFavorite user=userFavoriteService.listUserAllFavorite("1");
         mv.addObject("userFavorite",user);
-        mv.setViewName("result3.jsp");
+        mv.setViewName("test/result3.jsp");
         return mv;
     }
 

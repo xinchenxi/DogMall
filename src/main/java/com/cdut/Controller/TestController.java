@@ -45,7 +45,7 @@ public class TestController {
         //listAllUsers
         List<User> users=userService.getListUser();
         mv.addObject("allUsers",users);
-        mv.setViewName("result.jsp");
+        mv.setViewName("test/result.jsp");
 
         //getUserByAccount
         String account="z992448694";
@@ -61,7 +61,7 @@ public class TestController {
         User user=userService.getUserByAccount(Account);
         System.out.println(Account);
         mv.addObject("info",user);
-        mv.setViewName("result.jsp");
+        mv.setViewName("test/result.jsp");
         return mv;
     }
     @RequestMapping("/insertUser.do")
@@ -80,7 +80,7 @@ public class TestController {
         userInfoService.addUserInfo(user);
         User users =userService.getUserByAccount(account);
         mv.addObject("users",users);
-        mv.setViewName("result.jsp");
+        mv.setViewName("test/result.jsp");
         return mv;
     }
     @RequestMapping("/updateUserPassword.do")
@@ -92,7 +92,7 @@ public class TestController {
         System.out.println(userId);
         User user1=userService.getUserByuserId(userId);
         mv.addObject("user1",user1);
-        mv.setViewName("result.jsp");
+        mv.setViewName("test/result.jsp");
         return mv;
     }
 
@@ -143,7 +143,7 @@ public class TestController {
             res.put("msg", "上传失败");
         }
 
-        mv.setViewName("result.jsp");
+        mv.setViewName("test/result.jsp");
         return mv;
     }
     @RequestMapping("testMd5.do")

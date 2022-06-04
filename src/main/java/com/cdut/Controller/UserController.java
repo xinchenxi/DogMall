@@ -65,7 +65,7 @@ public class UserController {
         //使用加密后的账号到数据库内查数据 如果为0就表示账号错误
         if(0==userService.getCountByAcoount(account)){
             mv.addObject("msg","账号错误");
-            mv.setViewName("result.jsp");
+            mv.setViewName("test/result.jsp");
             return mv;
         }else {//如果查到了就进入登录
             User user = userService.getUserByAccount(account);
@@ -81,7 +81,7 @@ public class UserController {
                 mv.setViewName("user_center_info.jsp");
             } else {
                 mv.addObject("msg", "密码错误");
-                mv.setViewName("result.jsp");
+                mv.setViewName("test/result.jsp");
             }
 
         }
@@ -159,7 +159,7 @@ public class UserController {
         }else{
             session.setAttribute("FavoriteMsg",1);
         }
-        mv.setViewName("result.jsp");
+        mv.setViewName("test/result.jsp");
         return mv;
    }
 
